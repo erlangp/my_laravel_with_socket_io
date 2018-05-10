@@ -17,7 +17,7 @@
 	"devMode": false,
 	"host": "warm-citadel-25994.herokuapp.com",
 	"port": "6001",
-	"protocol": "https",
+	"protocol": "http",
 	"socketio": {},
 	"sslCertPath": "",
 	"sslKeyPath": "",
