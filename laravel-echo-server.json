@@ -15,7 +15,7 @@
 		}
 	},
 	"devMode": false,
-	"host": "warm-citadel-25994.herokuapp.com/",
+	"host": "34.235.5.195",
 	"port": "6001",
 	"protocol": "http",
 	"socketio": {},

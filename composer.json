@@ -43,6 +43,9 @@
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
+        ],
+        "start-lec" : [
+            "bash ./node_modules/.bin/laravel-echo-server start"
         ]
     },
     "config": {
