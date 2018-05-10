@@ -1,5 +1,5 @@
 {
-	"authHost": "https://warm-citadel-25994.herokuapp.com/",
+	"authHost": "http://warm-citadel-25994.herokuapp.com",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{
