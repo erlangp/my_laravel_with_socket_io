@@ -1,5 +1,5 @@
 {
-	"authHost": "http://warm-citadel-25994.herokuapp.com/",
+	"authHost": "https://warm-citadel-25994.herokuapp.com/",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{
@@ -17,7 +17,7 @@
 	"devMode": true,
 	"host": "warm-citadel-25994.herokuapp.com",
 	"port": "6001",
-	"protocol": "http",
+	"protocol": "https",
 	"socketio": {},
 	"sslCertPath": "",
 	"sslKeyPath": "",
