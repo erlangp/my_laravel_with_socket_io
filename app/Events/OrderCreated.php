@@ -22,7 +22,6 @@ class OrderCreated implements ShouldBroadcast
     public function __construct()
     {
         //
-        
     }
 
     /**
