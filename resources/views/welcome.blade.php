@@ -82,8 +82,8 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>-->
-        <script src="//{{ Request::getHost() }}:6001/socket.io/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+        <!--<script src="//{{ Request::getHost() }}:6001/socket.io/socket.io.js"></script>-->
         <script src="{{ asset('js/app.js') }}"></script>
 
         <script>
