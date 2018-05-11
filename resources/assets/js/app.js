@@ -21,20 +21,18 @@ const app = new Vue({
     el: '#app'
 });
 
-
 import Echo from "laravel-echo"
+
 window.io = require('socket.io-client');
+
 window.Echo = new Echo({
     broadcaster: 'socket.io',
-    host: window.location.hostname + ':6001'
+    host: window.location.hostname + ':6001',
+    auth: {
+        headers: {
+            'Authorization': 'Bearer ' + '5c6314cb7c3eefe805cd8298e2dc4f07'
+        }
+    }
 });
-window.Echo.channel('orders')
-    .listen('.OrderCreated', (e) => {
-
-        // console.log(e.order.name);
-        console.log(e);
-
-    });
-window.console.log('Test hello from app.js');
 
 // EOF

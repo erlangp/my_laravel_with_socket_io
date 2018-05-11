@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Socket.io Client Sample</title>
 
         <!-- Styles -->
         <style>
@@ -82,8 +82,10 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
-        <!--<script src="//{{ Request::getHost() }}:6001/socket.io/socket.io.js"></script>-->
+        -->
+        <script src="//{{ Request::getHost() }}:6001/socket.io/socket.io.js"></script>
         <script src="{{ asset('js/app.js') }}"></script>
 
         <script>
@@ -100,8 +102,14 @@
             // });
         </script>
         <script>
-            console.log(window.Echo);
-            console.log(window.io);
+            console.log(Echo);
+            console.log(io);
+
+            Echo.channel('orders')
+                .listen('OrderCreatedEvent', (e) => {
+                    console.log('event=', e);
+                });
+            console.log('Test hello from app.js');
         </script>
     </body>
 </html>
